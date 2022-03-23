@@ -1,0 +1,253 @@
+
+<!--
+Name: Jinal Shah
+SWE 642 : Homework 2
+Survey Page
+-->
+
+
+<!DOCTYPE html>
+<html>
+<!-- Head Section -->
+<head>
+    <!--Linking External Style Sheets-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" href="scripts/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/surveycss.css">
+    <link rel="stylesheet" href="css/mainpopup.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui/jquery-ui.js"></script>
+
+</head>
+
+<!--Body Section -->
+<body>
+<!--Top Navigation menubar -->
+<nav>
+    <ul class="menubar">
+        <li class="menu"><a href="index.html"><strong>HOME</strong></a></li>
+        <li class="menu"><a href="info.html"><strong>INFO</strong></a></li>
+        <li class="menu"><a href="survey.html"><strong>SURVEY</strong></a></li>
+        <li class="menu"><a href="index.html"><strong>CONTACT</strong></a></li>
+    </ul>
+</nav>
+<!-- Title Strip : Design Layout -->
+<section class="titleStripSurvey"></section>
+
+<!-- General Information Heading Section-->
+<section class="headingbar">
+    <div class="w3-container">
+        <div class="left-col">
+            <div class="course-requirement">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Student Survey Form Field : Starts -->
+<div id="outside">
+    <form id="survey-form" onclick="" action="" method="post" autocomplete="on">
+        <br>
+        <h1 id="title" class="rec-box">Student Survey</h1>
+        <br>
+        <p class="cs-content">
+            <span id="greetings"></span>
+        </p>
+        <p id="description">Please provide us with your feedback about your recent campus visit</p>
+
+        <fieldset>
+            <!--Student's Personal Details-->
+            <legend>Personal Details</legend>
+            <div>
+                <label for="username" class="required" >Name: </label>
+                <input class="required" type="text" name="username" id="username" required autofocus/>
+            </div>
+
+            <!--  Street, City -->
+            <div>
+                <label for="address" class="required" >Street address: </label>
+                <input class="required" type="text" name="address" id="address" required />
+            </div>
+            <!--  City, State, ZIP   -->
+            <div>
+                <label>City: </label>
+                <label id="city"></label>
+                <br>
+                <label>State: </label>
+                <label id="state"></label>
+                <br>
+                <label for="zip" class="required" >Zip code: </label>
+                <input class="required" type="number" name="zip" min="5" id="zip" onblur="validateZip(this.value);" required/>
+                <br><label id="zip-error"></label></p>
+            </div>
+
+            <!-- Input : Email, Phone No  -->
+            <div>
+                <label for="telephone" class="required" >Telephone: </label>
+                <input class="required" type="tel" name="telephone" id="telephone" placeholder="***-***-****"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/> 
+            </div>
+            <div>
+                <label for="mail" class="required" >Email: </label>
+                <input class="required" type="email" name="mail" id="mail" placeholder="xyz@domain.com" required/>  
+            </div>
+
+            <!-- Date Selection -->
+            <p> Expected High School Graduation Date :</p>
+            <label for="browser"><i>Month:</i></label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="January">
+                <option value="February">
+                <option value="March">
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+            </datalist>
+            <!--Graduation Year-->
+            <label id="name-label" for="year" ><i>Year:</i></label>
+            <input type="text" id="gradyear" id="year" placeholder="2021">
+            <br>
+            <br>
+            <!-- Date Label Calendar drop down: Campus Visit Date -->
+            <label for="date-label" >Date of Campus Visit:</label>
+            <input type="date" id="date-label" >
+
+        </fieldset>
+
+        <!--Checkboxes, Radio Button Fields : Takes Student's Opinion about the University-->
+        <fieldset>
+            <legend>Opinion</legend>
+            <label for="campus" ><p>What you liked most about the campus.<i style="font-size:13px" class="required"> Check atleast two</i></p></label>
+            <div class="checkbox" id="campus" >
+                <p>
+                    <input type="checkbox" name="opinion" value="student"> Students<br>
+                    <input type="checkbox" name="opinion" value="location"> Location<br>
+                    <input type="checkbox" name="opinion" value="campus"> Campus<br>
+                    <input type="checkbox" name="opinion" value="atmosphere"> Atmosphere<br>
+                    <input type="checkbox" name="opinion" value="dormroom"> Dorm Rooms<br>
+                    <input type="checkbox" name="opinion" value="sports"> Sports<br>
+                </p>
+            </div>
+
+            <!---Radio Buttons-->
+            <div>
+                <label for="gettoknow" ><p>How did you get to know about the university.<i style="font-size:13px" class="required"> Select One</i></p></label>
+                <p id="gettoknow" >
+                    <input type="radio" id="friends" name="gettoknow" value="friends">
+                    <label for="friends">Friends</label><br>
+
+                    <input type="radio" id="television" name="gettoknow" value="television">
+                    <label for="television">Television</label><br>
+
+                    <input type="radio" id="internet" name="gettoknow" value="internet">
+                    <label for="internet">Internet</label><br>
+
+                    <input type="radio" id="other" name="gettoknow" value="other">
+                    <label for="other">Other</label><br>
+                </p>
+            </div>
+
+            <!-- Dropdown menu-->
+            <div>
+                <label for="recommend">How likely would you recommend the university to prospective
+                    students</label>
+                <select id="dropdown" name="recommend" id="recommend">
+                    <option value="left">Very Likely</option>
+                    <option value="right">Likely</option>
+                    <option value="conservative">Unlikely</option>
+                </select>
+                <p></p>
+            </div>
+
+        </fieldset>
+        <!-- Additional Comments : Text Field -->
+        <fieldset>
+            <legend>Additional Comments</legend>
+            <div>
+                <label for="msg"></label>
+                <p> In 50 words or more let us know how better we can assist you</p>
+                <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- DATA FIELD : Computes Maximum and Average -->
+        <fieldset>
+            <legend>Data!</legend>
+            <section class="parent">
+
+                <section class="child">
+                    <p> Enter atleast 10 comma separated numbers between 1 - 100 </p>
+                    <textarea id="numbers" onmouseout="validate()" rows="10" cols="70"
+                              placeholder="10,20,30,40,50,60,70,80,90,100..."></textarea>
+                </section>
+
+                <section class="child2">
+                    <output name="errorMessage" id="errorMessage" class="errorMessage"></output>
+                    <br>
+                    <output name="placeholder"> Maximum =</output>
+                    <output name="result" id="outputmax"></output>
+                    <br>
+                    <output name="placeholder"> Average =</output>
+                    <output name="result2" id="outputavg"></output>
+                </section>
+
+            </section>
+
+        </fieldset>
+
+        <!-- Form Submit & Reset Buttons-->
+        <p class="requiredbefore"><i style="font-size:11px">Fields must be completed to submit the survey</i></p>
+        <div id="submitbutton">
+            <button type="submit" action="" id="submit" >Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" onclick="myFunction()">Reset</button>
+        </div>
+    </form>
+    <!-- Student Survey Form Field : Ends -->
+</div>
+
+<!-- Javascript Function for Reset & Survey Page Greetings-->
+<script>
+    function myFunction(){
+        document.getElementById("survey-form").reset();
+    }
+</script>
+<script type="text/javascript" src="scripts/script_new.js"></script>
+<script type="text/javascript">
+    greeting();
+
+
+</script>
+
+</body>
+
+<!-- Web Page Footer Specification -->
+<footer class="bottomfooter">
+    <a href="https://www2.gmu.edu/"><img class="resize" style="float:right" src="images/gmu_logo_footer.jpg" alt=""></a>
+    <div class="line">
+        <hr>
+        <!-- University Description : Link to the University Home Page -->
+        <div class="footer-about">
+            <h4 style="color:#006633;">About</h4>
+            <p class="text-justify">George Mason University is a public, comprehensive, research university established
+                by the Commonwealth of Virginia in the National Capital Region. We are an innovative and inclusive
+                academic community committed to creating a more just, free, and prosperous world.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

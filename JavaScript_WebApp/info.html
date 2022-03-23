@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head Section -->
+<head>
+<!--Linking External Style Sheets-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/gmu-favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainpopup.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>CS Information</title>
+</head>
+
+<!--Body Section -->
+<body>
+<!--Top Navigation menubar -->
+  <nav>
+      <ul class="menubar">
+          <li class="menu"><a href="index.html"><strong>HOME</strong></a></li>
+          <li class="menu"><a href="info.html"><strong>INFO</strong></a></li>
+          <li class="menu"><a href="survey.html"><strong>SURVEY</strong></a></li>
+          <li class="menu"><a href="index.html"><strong>CONTACT</strong></a></li>
+      </ul>
+  </nav>
+
+  <!-- Title Strip : Design Layout -->
+  <section class="titleStrip"></section>
+
+  <!-- General Information Heading Section-->
+  <section class="headingbar">
+      <div class="w3-container">
+          <div class="left-col">
+              <h1><strong>Computer Science Department</strong></h1>
+          </div>
+      </div>
+  </section>
+
+  <!-- General Information Section about Computer Science Department-->
+  <section class="Information">
+      <div class="infotext">
+          <p></p>
+          <p style="text-align: justify">The Computer Science graduate program prepares students for research and
+              professional practice in computer science and related technologies. The program includes both fundamentals
+              and advanced work in the areas of artificial intelligence and databases, programming languages and software
+              engineering, systems and networks, theoretical computer science, and visual computing. Graduate classes are
+              divided into basic classes, which have no graduate course prerequisite, and advanced classes, which have a
+              graduate class as a prerequisite. Graduate classes are generally offered in the late afternoon and evening.
+              Financial aid in the form of graduate assistantships may be available for full-time degree-seeking
+              students.</p>
+          <p>The department offers multi disciplinary programs.List of related graduate programs that students can
+              pursue</p>
+      </div>
+  </section>
+
+  <!-- Offered Degree Program List-->
+  <section class="programs">
+      <div class="course-requirement">
+          <h1>Program Information</h1>
+      </div>
+      <div class="box">
+          <ul class="program-list">
+              <li class="bullets" onclick="togglePopupcs()"> Computer Science, MS
+                  <button type="button" class="button1">Click for Details!</button>
+              </li>
+              <li class="bullets" onclick="togglePopupISA()">Information Security and Assurance, MS
+                  <button type="button" class="button1">Click for Details!</button>
+              </li>
+              <li class="bullets" onclick="togglePopupISAGC()">Information Security and Assurance Graduate Certificate
+                  <button type="button" class="button1">Click for Details!</button>
+              </li>
+              <li class="bullets" onclick="togglePopupIS()">Information Systems, MS
+                  <button type="button" class="button1">Click for Details!</button>
+              </li>
+              <li class="bullets" onclick="togglePopupSWE()">Software Engineering, MS
+                  <button type="button" class="button1">Click for Details!</button>
+              </li>
+              <li class="bullets" onclick="togglePopupSWEGC()">Software Engineering Graduate Certificate
+                  <button type="button" class="button1">Click for Details!</button>
+              </li>
+          </ul>
+      </div>
+  </section>
+
+  <!-- Computer Science,MS Pop Up Table : Program Requirements-->
+  <script type="text/javascript">
+       function togglePopupcs(){ document.getElementById("popup-1").classList.toggle("active");}
+  </script>
+  <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+          <!-- Computer Science -->
+          <div class="close-btn" onclick="togglePopupcs()">&times;</div>
+          <h1 align="center">Computer Science, MS</h1>
+          <h3 align="center">Degree requirements</h3>
+          <table width="100%" class="center"
+                 summary="This table provides information about the program requirements of Master's in Computer Science">
+              <thead>
+              <tr>
+                  <th class="title-row" colspan="2" style="color:white;">Core Courses By Area</th>
+              </tr>
+              </thead>
+              <thead>
+              <tr>
+                  <th colspan="2"></th>
+              </tr>
+              </thead>
+              <thead>
+              <tr class="title-cells">
+                  <th>C.No.</th>
+                  <th>Name</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          550</a></td>
+                  <td>Database Management</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          580</a></td>
+                  <td>Introduction to Artificial Intelligence</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          584</a></td>
+                  <td>Theory and Applications of Data Mining</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          540</a></td>
+                  <td>Language Processors</td>
+              </tr>
+              </tbody>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!-- Information Security and Assurance, MS Pop Up Table : Program Requirements-->
+  <script type="text/javascript">
+       function togglePopupISA(){ document.getElementById("popup-2").classList.toggle("active");}
+  </script>
+  <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+      <div class="content">
+          <div class="close-btn" onclick="togglePopupISA()">&times;</div>
+          <h1 align="center">Information Security and Assurance, MS</h1>
+          <h3 align="center">Degree requirements</h3>
+          <table width="100%" class="center"
+                 summary="This table provides information about the program requirements of Information Security and Assurance, MS">
+              <thead>
+              <tr>
+                  <th class="title-row" colspan="2" style="color:white;">Core Courses By Area</th>
+              </tr>
+              </thead>
+              <thead>
+              <tr>
+                  <th colspan="2"></th>
+              </tr>
+              </thead>
+              <thead>
+              <tr class="title-cells">
+                  <th>C.No.</th>
+                  <th>Name</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">ISA
+                          562
+                      </a></td>
+                  <td>Information Security Theory and Practice</td>
+              </tr>
+
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">ISA
+                          656</a></td>
+                  <td>Network Security</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">INFS
+                          612</a></td>
+                  <td>Principles and Practices of Communication Networks</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          555</a></td>
+                  <td>Computer Communications and Networking</td>
+              </tr>
+              </tbody>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!-- Information Security & Assurance, Graduate Certificate Pop Up Table : Program Requirements-->
+  <script type="text/javascript">
+        function togglePopupISAGC(){ document.getElementById("popup-3").classList.toggle("active");}
+  </script>
+  <div class="popup" id="popup-3">
+      <div class="overlay"></div>
+      <div class="content">
+          <div class="close-btn" onclick="togglePopupISAGC()">&times;</div>
+          <h1 align="center">Information Security & Assurance</h1>
+          <h3 align="center">Graduate Certificate, Degree Requirements</h3>
+          <table width="100%" class="center"
+                 summary="This table provides information about the program requirements of Information Security and Assurance, MS">
+              <thead>
+              <tr>
+                  <th class="title-row" colspan="2" style="color:white;">Core Courses By Area</th>
+              </tr>
+              </thead>
+              <thead>
+              <tr>
+                  <th colspan="2"></th>
+              </tr>
+              </thead>
+
+              <thead>
+              <tr class="title-cells">
+                  <th>C.No.</th>
+                  <th>Name</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">ISA
+                          562
+                      </a></td>
+                  <td>Information Security Theory and Practice</td>
+              </tr>
+
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">ISA
+                          656</a></td>
+                  <td>Network Security</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">ISA
+                          564</a></td>
+                  <td>Security Laboratory</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">ISA
+                          652</a></td>
+                  <td>Security Audit and Compliance Testing</td>
+              </tr>
+              </tbody>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!-- Information Systems, MS Pop Up Table : Program Requirements-->
+  <script type="text/javascript">
+        function togglePopupIS(){ document.getElementById("popup-4").classList.toggle("active");}
+  </script>
+  <div class="popup" id="popup-4">
+      <div class="overlay"></div>
+      <div class="content">
+          <div class="close-btn" onclick="togglePopupIS()">&times;</div>
+          <h1 align="center">Information Systems</h1>
+          <h3 align="center">Degree Requirements</h3>
+          <table width="100%" class="center"
+                 summary="This table provides information about the program requirements of Information Systems, MS">
+              <thead>
+              <tr>
+                  <th class="title-row" colspan="2" style="color:white;">Core Courses By Area</th>
+              </tr>
+              </thead>
+              <thead>
+              <tr>
+                  <th colspan="2"></th>
+              </tr>
+              </thead>
+              <thead>
+              <tr class="title-cells">
+                  <th>C.No.</th>
+                  <th>Name</th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          530
+                      </a></td>
+                  <td>Mathematical Foundations of Computer Science</td>
+              </tr>
+
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          550</a></td>
+                  <td>Database Systems</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">INFS
+                          612</a></td>
+                  <td>Principles and Practices of Communication Networks</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">INFS
+                          622</a></td>
+                  <td>Information Systems Analysis and Design</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">INFS
+                          740</a></td>
+                  <td>Database Programming for the World Wide Web</td>
+              </tr>
+              </tbody>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!-- Software Engineering, MS Pop Up Table : Program Requirements-->
+  <script type="text/javascript">
+        function togglePopupSWE(){ document.getElementById("popup-5").classList.toggle("active");}
+  </script>
+  <div class="popup" id="popup-5">
+      <div class="overlay"></div>
+      <div class="content">
+          <div class="close-btn" onclick="togglePopupSWE()">&times;</div>
+          <h1 align="center">Software Engineering</h1>
+          <h3 align="center">Degree Requirements</h3>
+          <table width="100%" class="center"
+                 summary="This table provides information about the program requirements of Information Systems, MS">
+              <thead>
+              <tr>
+                  <th class="title-row" colspan="2" style="color:white;">Core Courses By Area</th>
+              </tr>
+              </thead>
+              <thead>
+              <tr>
+                  <th colspan="2"></th>
+              </tr>
+              </thead>
+              <thead>
+              <tr class="title-cells">
+                  <th>C.No.</th>
+                  <th>Name</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          619
+                      </a></td>
+                  <td> Object-Oriented Software Specification and Construction</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          621</a></td>
+                  <td>Software Design and Architectures</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          632</a></td>
+                  <td>User Interface Design and Development</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          637</a></td>
+                  <td>Software Testing</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          540</a></td>
+                  <td>Language Processors</td>
+              </tr>
+              </tbody>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!-- Software Engineering, Graduate Certificate Pop Up Table : Program Requirements -->
+  <script type="text/javascript">
+        function togglePopupSWEGC(){ document.getElementById("popup-6").classList.toggle("active");}
+  </script>
+  <div class="popup" id="popup-6">
+      <div class="overlay"></div>
+      <div class="content">
+          <div class="close-btn" onclick="togglePopupSWEGC()">&times;</div>
+          <h1 align="center">Software Engineering</h1>
+          <h3 align="center">Graduate Certificate, Degree Requirements</h3>
+          <table width="100%" class="center"
+                 summary="This table provides information about the program requirements of Information Systems, MS">
+              <thead>
+              <tr>
+                  <th class="title-row" colspan="2" style="color:white;">Core Courses By Area</th>
+              </tr>
+              </thead>
+              <thead>
+              <tr>
+                  <th colspan="2"></th>
+              </tr>
+              </thead>
+              <thead>
+              <tr class="title-cells">
+                  <th>C.No.</th>
+                  <th>Name</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          675
+                      </a></td>
+                  <td>Distributed Systems</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">CS
+                          706</a></td>
+                  <td>Concurrent Software Systems</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          620</a></td>
+                  <td>Software Requirements Analysis and Specification</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          625</a></td>
+                  <td>Software Project Management</td>
+              </tr>
+              <tr>
+                  <td>
+                      <a href="https://catalog.gmu.edu/colleges-schools/engineering/computer-science/computer-science-ms/#requirementstext">SWE
+                          626</a></td>
+                  <td>Software Project Laboratory</td>
+              </tr>
+              </tbody>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</body>
+
+<!-- Web Page Footer Specification -->
+<footer class="bottomfooter">
+    <a href="https://www2.gmu.edu/"><img class="resize" style="float:right" src="images/gmu_logo_footer.jpg" alt=""></a>
+    <div class="line">
+        <hr>
+        <!-- University Description : Link to the University Home Page -->
+        <div class="footer-about">
+            <h4 style="color:#006633;">About</h4>
+            <p class="text-justify">George Mason University is a public, comprehensive, research university established
+                by the Commonwealth of Virginia in the National Capital Region. We are an innovative and inclusive
+                academic community committed to creating a more just, free, and prosperous world.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

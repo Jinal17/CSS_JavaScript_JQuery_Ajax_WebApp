@@ -1,0 +1,51 @@
+
+/* Styling of the Tables on General Information : CS Page  */
+
+body {
+font-family: Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
+color: #333333;
+}
+
+.title-row{
+background : #006633;
+}
+
+table, th, td {
+padding: 10px;
+text-align: left;
+}
+
+tr:nth-child(even) {
+background:  #eff0e8;
+}
+
+tr:hover {
+background:  #e1e8e3
+}
+
+.title-cells{
+background:  #eff0e8;
+}
+
+table {
+border-collapse:collapse;
+caption-side:bottom;
+align: center;
+}
+
+caption {
+font-size: 16px;
+font-weight: bold;
+padding-top: 5px;
+}
+
+h1, h3{
+color: #006633;
+}
+
+.center{
+margin-left: auto;
+margin-right: auto;
+}

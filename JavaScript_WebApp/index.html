@@ -1,0 +1,223 @@
+
+<!--
+Name: Jinal Shah
+SWE 642 : Homework 2
+Homepage
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!--Linking External Style Sheets-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="images/gmu-favicon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="scripts/jquery-ui/jquery-ui.css"/>
+
+    <!--JQuery Library-->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui/jquery-ui.js"></script>
+
+    <title>SWE642 Home</title>
+
+    <!-- JQuery TABS SCRIPT-->
+    <script type="text/javascript">
+      $("document").ready(function() {
+          $("#tabsCtrl").tabs({
+              heightStyle : "auto",
+              collapsible : true
+          });
+
+          $("#addTab").click(function(evt) {
+              newTab = $("<li><a href='#tab5'>Tab 5</li>");
+              $("#tabsCtrl").find(".ui-tabs-nav").append(newTab);
+              $("#tabsCtrl").append("<div id='tab5'><p>This is the newly added tab</p></div>");
+              $("#tabsCtrl").tabs("refresh");
+              evt.preventDefault();
+          });
+      });
+    </script>
+</head>
+
+<!-- Template : Interior Design from W3 School -->
+<!-- Styling for the headings and the images-->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
+</style>
+
+<!-- Document Body -->
+<body>
+
+<!--Top Navigation menubar -->
+<nav>
+    <ul class="menubar">
+        <li class="menu"><a href="index.html"><strong>HOME</strong></a></li>
+        <li class="menu"><a href="info.html"><strong>INFO</strong></a></li>
+        <li class="menu"><a href="survey.html"><strong>SURVEY</strong></a></li>
+        <li class="menu"><a href="index.html"><strong>CONTACT</strong></a></li>
+    </ul>
+</nav>
+
+<!--Left Side Image Container With Mason Logo -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;"
+     id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+       style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+        <img src="images/green_gmu_logo.jpg" alt="">
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Jinal Shah</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+     id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Heading : About Me Section-->
+    <div class="w3-container backside" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo " style="color: #006633;"><b>Jinal Shah</b></h1>
+        <h3>Student - SWE 642</h3>
+        <hr style="width:50px;border:5px solid green" class="w3-round">
+
+        <!-- JQUERY UI TABS CONTROL -->
+        <div id="tabsCtrl">
+            <ul class="tabs">
+                <li><a href="#tab1">About Me</a></li>
+                <li><a href="#tab2">Volgenau School</a></li>
+
+            </ul>
+            <div id="tab1">
+                <div class="w3-row-padding">
+                    <div class="w3-half">
+                        <img src="images/jinal.jpg" style="width:45%" alt="Jinal's Picture">
+                    </div>
+                    <div>
+                        <div class="box-index">
+                            <ul class="program-list">
+                                <li class="bullets2">Student Class Webpage
+                                    <button onclick="location.href='index.html'" type="button" class="button2">Click for
+                                        Details!
+                                    </button>
+                                </li>
+                                <li class="bullets2">HW-I: CS Department Information page
+                                    <button onclick="location.href='info.html'" type="button" class="button2">Click for
+                                        Details!
+                                    </button>
+                                </li>
+                                <li class="bullets2">HW-II: Survey Page with Javascript
+                                    <button onclick="location.href='survey.html'" type="button" class="button2">Click
+                                        for Details!
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Me :  Description -->
+                <div class="w3-container backside" id="contact" style="margin-top:10px">
+                    <hr style="width:50px;border:5px solid green" class="w3-round">
+                    <p>I am<strong> Jinal Shah</strong>. Currently, I'm pursuing Master’s in Computer Science at George
+                        Mason
+                        University. I'm passionate about creating beautiful, usable and useful products using modern
+                        technologies.
+                        You can contact me via :</p>
+                    <p>Email: jshah21@gmu.edu</p>
+                    <h3 style="color:#006633;">SWE 642 : Software Engineering for the World Wide Web</h3>
+                    <p align="justify">Detailed study of the engineering methods and technologies for building highly
+                        interactive web sites for e-commerce and other web-based applications.
+                        Engineering principles for building web sites that exhibit high reliability,
+                        usability, availability, scalability and maintainability are presented. Methods
+                        such as client-server programming, component-based software development,
+                        middleware, and reusable components are covered. After the course, students
+                        should be prepared to create software for large-scale web sites.
+                        SWE 642 teaches some of the topics related to the exciting software development
+                        models that are used to support web and e-commerce applications. We will be
+                        studying the software design and development side of web applications, rather
+                        than the policy, business, or networking sides. An introductory level knowledge
+                        of HTML and Java is required. SWE 619 is a required prerequisite and SWE 632
+                        is a good background course. The class will be very practical (how to build
+                        things) and require several programming assignments.</p>
+                </div>
+            </div>
+            <!-- Volgenau School Tab : Display of Volgenau School Of Engineering Page -->
+            <div id="tab2">
+                <div class="volgenau" id="volgenau">
+
+                    <div class="volgenau-logo">
+                        <a href="https://www2.gmu.edu/" target="_blank" class="mason-eng-logo"><img
+                                src="images/header-logo-home.png" alt="Volgenau School of Engineering"></a>
+                    </div>
+
+                    <img src="images/slider1.jpg" class="slide" id="slides" alt="Slider"/>
+                    <div id="slider" style="display: none;"></div>
+
+                    <div class="volgenau-logo">
+                        <ul class="mid-section">
+                            <li class="mid-li-first">
+                                <img src="images/bigdata.jpg" alt="Big Data"/>
+                                <h6>BIG DATA</h6>
+                            </li>
+                            <li class="mid-li">
+                                <img src="images/cybersecurity.jpg" alt="Cybersecurity"/>
+                                <h6>CYBERSECURITY</h6>
+                            </li>
+                            <li class="mid-li">
+                                <img src="images/globalization.jpg" alt="Globalization"/>
+                                <h6>GLOBALIZATION</h6>
+                            </li>
+                            <li class="mid-li">
+                                <img src="images/healthcare.jpg" alt="Health Care Technology"/>
+                                <h6>HEALTH CARE</h6>
+                            </li>
+                            <li class="mid-li">
+                                <img src="images/robotics.jpg" alt="Robotics"/>
+                                <h6>ROBOTICS</h6>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of the jquery tab -->
+</div>
+
+
+<!-- Assignment list Section - Right -->
+
+</div>
+<script type="text/javascript" src="scripts/script_new.js"></script>
+</body>
+
+<!-- Page Footer -->
+<footer class="bottomfooter">
+    <a href="https://www2.gmu.edu/"><img class="resize" style="float:right" src="images/gmu_logo_footer.jpg" alt=""></a>
+    <div class="line">
+        <hr>
+        <!-- University Description : Link to the University Home Page -->
+        <div class="footerindex-about">
+            <h4 style="color:#006633;">About</h4>
+            <p class="text-justify">George Mason University is a public, comprehensive, research university established
+                by the Commonwealth of Virginia in the National Capital Region. We are an innovative and inclusive
+                academic community committed to creating a more just, free, and prosperous world.</p>
+        </div>
+    </div>
+</footer>
+</html>
